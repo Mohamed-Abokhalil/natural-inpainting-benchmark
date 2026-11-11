@@ -4,7 +4,7 @@ Code, configurations, test-set definition and per-image scores of the unified be
 
 > M. Mahmoud, M. F. Senussi, M. Abdalla, M. S. Kasem, H.-S. Kang. **From Convolutions to Diffusion: A Decade of Deep Learning for Natural Image Inpainting.** *Neurocomputing* (under review, manuscript NEUCOM-D-26-17181).
 
-Repository: <<REPO_URL>> · Archive (code snapshot and generated outputs): https://doi.org/<<DOI>>
+Repository: <<REPO_URL>> · Archived snapshot: https://doi.org/<<DOI>> · Generated outputs: the Zenodo record named in `zenodo_record.json` (see below)
 
 Twenty-four inpainting methods (2019–2026) are evaluated with their authors' released Places2 checkpoints under one protocol:
 1,000 Places365-Standard test images (official 256×256 release), each paired with one QD-IMD test mask (hole ratio up to 50 %, five coverage bins),
