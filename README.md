@@ -54,6 +54,7 @@ Confidence intervals, KID, P-/U-IDS, NIQE (Table 9), diversity (Table 10), per-c
 | `data/masks/` | the 1,000 binary masks as used (256×256 PNG, 255 = missing) |
 | `data/seeds.json` | every seed (image sampling 42, qualitative scenes 142, diversity subset 2026, stochastic re-runs, bootstrap 0) |
 | `data/diversity100.*`, `data/diffusion10.txt` | the subsets of Table 10 |
+| `data/master_index_criteria.csv` | every method of the paper's Tables 1–2 with the selection criteria R1–R4 it meets (Section 2.4), its citation count, source (Crossref, OpenAlex or Semantic Scholar) and retrieval date (2026-11-11) |
 | `configs/<method>.yaml` | repository URL, commit, checkpoint(s), inference script, native and inference resolution, deviations |
 | `environments/<method>/` | `requirements.txt` (and `environment.yml` for the TensorFlow methods) of the environment used for the re-runs and efficiency measurements; `environments/eval/` for the metrics |
 | `code/` | evaluation, statistics, re-run runners, efficiency loaders, figure scripts |
