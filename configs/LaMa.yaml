@@ -1,0 +1,12 @@
+method: LaMa
+family: G4
+repository: https://github.com/enesmsahin/simple-lama-inpainting (package); big-lama from https://github.com/advimman/lama
+commit: n/a (pip package simple-lama-inpainting==0.1.2)
+checkpoints:
+  - ~/.cache/torch/hub/checkpoints/big-lama.pt
+inference_script: "simpleLaMa.py (simple-lama-inpainting 0.1.2, TorchScript big-lama)"
+native_resolution: "fully convolutional (trained 256)"
+inference_resolution: "256"
+benchmark_resolution: 256
+mask_convention_input: 255 = hole (data/masks)
+notes: "Big-LaMa (Places-Challenge); TorchScript export from simple-lama-inpainting"

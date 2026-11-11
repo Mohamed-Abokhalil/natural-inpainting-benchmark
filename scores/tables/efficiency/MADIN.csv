@@ -1,0 +1,2 @@
+method,gen,year,params,flops,steps,latency,memory
+MADIN,G4,0,29.804407,140.01403904,1,59.678549002856016,0.8395800590515137

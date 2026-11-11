@@ -1,0 +1,12 @@
+method: VHII
+family: G4
+repository: https://github.com/jose13579/variable-hyperparameter-image-impainting.git
+commit: 783f68214d9fcf37d14cde250e70940580b63f4b
+checkpoints:
+  - trained_models/places/places_VHII_efficient/best_model_places.pth
+inference_script: "test_dataset.py (official)"
+native_resolution: "256"
+inference_resolution: "256"
+benchmark_resolution: 256
+mask_convention_input: 255 = hole (data/masks)
+notes: "Paper: Campana et al., Computers & Graphics 113 (2023) 57-68 (submitted manuscript cited Peng et al. 2021 by mistake). PUBLISHED RUN INVALID: test_dataset.py pairs each image with maskfile[random.randint(...)]; corrected re-run with paired masks; deterministic (no sampling)"

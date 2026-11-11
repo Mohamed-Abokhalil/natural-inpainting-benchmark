@@ -1,0 +1,2 @@
+method,gen,year,params,flops,steps,latency,memory
+E2I,G3,2020,24.283052,62.29525632916667,3,81.534103,2.3416192531585693

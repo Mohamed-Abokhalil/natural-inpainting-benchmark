@@ -1,0 +1,2 @@
+method,gen,year,params,flops,steps,latency,memory
+latent-code,G2,0,1218.513226,1861.450158976,6,1046.9742370024323,9.33643913269043

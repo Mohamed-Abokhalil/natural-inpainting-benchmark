@@ -1,0 +1,12 @@
+method: CTSDG
+family: G3
+repository: https://github.com/Xiefan-Guo/CTSDG.git
+commit: def02741ba1a110e70ee1a6365868e5d43731132
+checkpoints:
+  - Checkpoints/places2.pt
+inference_script: "test.py (official, modified)"
+native_resolution: "256"
+inference_resolution: "256"
+benchmark_resolution: 256
+mask_convention_input: 255 = hole (data/masks)
+notes: "composited"

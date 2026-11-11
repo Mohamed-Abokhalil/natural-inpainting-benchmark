@@ -1,0 +1,12 @@
+method: DeepFillv2
+family: G1
+repository: https://github.com/JiahuiYu/generative_inpainting.git
+commit: 3a5324373ba52c68c79587ca183bc10b9e57b783
+checkpoints:
+  - model_logs/release_places2_256
+inference_script: "test_folder.py (untracked, wraps official test.py graph)"
+native_resolution: "256 (Places2 release_places2_256)"
+inference_resolution: "256"
+benchmark_resolution: 256
+mask_convention_input: 255 = hole (data/masks)
+notes: "TensorFlow 1.x; outputs post-composited with a slightly different mask binarisation (mean |known diff| 0.29 grey levels)"

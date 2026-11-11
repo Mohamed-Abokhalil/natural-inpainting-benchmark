@@ -1,0 +1,16 @@
+method: latent-code
+family: G2
+repository: https://github.com/nintendops/latent-code-inpainting.git
+commit: e6b49c9375bbb53db2e7f3a1afaa853ff85caad8
+checkpoints:
+  - ckpts/places256_vqgan1024_BASE.ckpt
+  - ckpts/places256_partialencoder.ckpt
+  - ckpts/places256_decoder.ckpt
+  - ckpts/places256_unet.ckpt
+  - ckpts/places256_transformer.ckpt
+inference_script: "infer_latent.py (untracked; reproduces repository evaluation pipeline)"
+native_resolution: "256"
+inference_resolution: "256"
+benchmark_resolution: 256
+mask_convention_input: 255 = hole (data/masks)
+notes: "composited"

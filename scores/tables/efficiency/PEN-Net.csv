@@ -1,0 +1,2 @@
+method,gen,year,params,flops,steps,latency,memory
+PEN-Net,G2,0,10.231538,25.658589184,1,14.145809998735785,0.29666566848754883

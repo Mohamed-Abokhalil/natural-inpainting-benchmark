@@ -1,0 +1,14 @@
+method: StrDiff
+family: G5
+repository: https://github.com/htyjers/StrDiffusion.git
+commit: 557668f9776f1f4eebc1528450a4557bb95978d2
+checkpoints:
+  - test/texture/Places2/t.pth
+  - test/texture/Places2/s.pth
+  - test/texture/Places2/dis.pth
+inference_script: "test/texture/config/inpainting/test.py with options/test/ir-sde.yml"
+native_resolution: "256"
+inference_resolution: "256"
+benchmark_resolution: 256
+mask_convention_input: 255 = hole (data/masks)
+notes: "IR-SDE reverse-time SDE, T=400, cosine schedule, max_sigma 30, adaptive resampling (u_max 6, u_min 3, jump 5, re 5)"

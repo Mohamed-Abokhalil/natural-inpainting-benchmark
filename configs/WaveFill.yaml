@@ -1,0 +1,12 @@
+method: WaveFill
+family: G4
+repository: https://github.com/yingchen001/WaveFill.git
+commit: 6685f5570f76b4f4d39327ca2520e2ce14c6e109
+checkpoints:
+  - checkpoints/places2_wavefill/latest_net_G.pth
+inference_script: "infer.py (untracked)"
+native_resolution: "256"
+inference_resolution: "256"
+benchmark_resolution: 256
+mask_convention_input: 255 = hole (data/masks)
+notes: "options of test_wavelet.sh (WaveletInpaintLv2GCFRAN, level 2, attention)"

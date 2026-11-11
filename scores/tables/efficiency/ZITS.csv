@@ -1,0 +1,2 @@
+method,gen,year,params,flops,steps,latency,memory
+ZITS,G3,0,68.164429,229.021974528,1,135.86268899962306,0.36850404739379883

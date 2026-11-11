@@ -1,0 +1,2 @@
+method,gen,year,params,flops,steps,latency,memory
+DeepFillv2,G1,2019,4.052478,27.7819725795,1,18.58186299999998,0.12417960166931152

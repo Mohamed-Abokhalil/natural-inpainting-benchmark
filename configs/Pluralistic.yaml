@@ -1,0 +1,13 @@
+method: Pluralistic
+family: G2
+repository: https://github.com/lyndonzheng/Pluralistic
+commit: 034a7588957adff1edb027af44f48a35d1c949d3
+checkpoints:
+  - checkpoints/place2_random/latest_net_E.pth
+  - checkpoints/place2_random/latest_net_G.pth
+inference_script: "test.py (official) with test_opt.txt"
+native_resolution: "256"
+inference_resolution: "256"
+benchmark_resolution: 256
+mask_convention_input: 255 = hole (data/masks)
+notes: "PUBLISHED RUN INVALID: mask_type [3] draws a random mask per image and resize_and_crop 266->256 misaligns; corrected re-run with paired masks (work/runners/gan_run.py)"

@@ -1,0 +1,2 @@
+method,gen,year,params,flops,steps,latency,memory
+MISF,G4,0,23.059493,130.48479744,1,15.184003999456763,0.3821883201599121

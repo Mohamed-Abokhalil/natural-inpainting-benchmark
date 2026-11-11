@@ -1,0 +1,2 @@
+method,gen,year,params,flops,steps,latency,memory
+MEDFE,G3,0,130.31607,126.133059584,1,27.88025699555874,3.276508331298828

@@ -1,0 +1,2 @@
+method,gen,year,params,flops,steps,latency,memory
+DGTS,G3,0,59.948943,315.485175808,1,178.8292959984392,1.0799546241760254

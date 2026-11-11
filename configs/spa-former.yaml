@@ -1,0 +1,12 @@
+method: spa-former
+family: G4
+repository: https://github.com/huangwenwenlili/spa-former
+commit: 1c6bb29eb95a2655a5827ded20097122b4d0c9cb
+checkpoints:
+  - checkpoints/place2/latest_net_G.pth
+inference_script: "test.py (official) with test_opt.txt"
+native_resolution: "256"
+inference_resolution: "256"
+benchmark_resolution: 256
+mask_convention_input: 255 = hole (data/masks)
+notes: "PUBLISHED RUN INVALID: mask_type [2,4] generates masks on the fly; benchmark masks never used; corrected re-run with paired masks"

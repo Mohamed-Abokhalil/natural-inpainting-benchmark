@@ -1,0 +1,217 @@
+{
+ "record_id": "<<ZENODO_RECORD_ID>>",
+ "doi": "<<DOI>>",
+ "note": "Replace record_id with the numeric Zenodo record that holds the archives below (see PUBLISHING.md).",
+ "archives": [
+  {
+   "file": "outputs_BAT-Fill.zip",
+   "extracts_to": "outputs/BAT-Fill/",
+   "n_files": 1000,
+   "bytes": 104345500,
+   "sha256": "5e60f102e0e4810522e11c47171c59b620efc86646cd6e1f68955dd91f71f601"
+  },
+  {
+   "file": "outputs_CMT.zip",
+   "extracts_to": "outputs/CMT/",
+   "n_files": 1000,
+   "bytes": 122085336,
+   "sha256": "5cc9658db1f867fab4328718b793b631e352531d637db30d9bbae3ba6c2c841c"
+  },
+  {
+   "file": "outputs_CTSDG.zip",
+   "extracts_to": "outputs/CTSDG/",
+   "n_files": 1000,
+   "bytes": 105269178,
+   "sha256": "53809a85d8bc9f2c466d96361c3ea2436dad3bcd3033967864d289d82a8e2e21"
+  },
+  {
+   "file": "outputs_CoModGAN.zip",
+   "extracts_to": "outputs/CoModGAN/",
+   "n_files": 1000,
+   "bytes": 133070675,
+   "sha256": "d52ec0f0521008277effa71aa3900efb0342a5d86037f19d1ece3daf03e1f40d"
+  },
+  {
+   "file": "outputs_DGTS.zip",
+   "extracts_to": "outputs/DGTS/",
+   "n_files": 1000,
+   "bytes": 111993891,
+   "sha256": "de0d8ee9f351862ea2ef89ef6566705f4631a8ad20bc6b9f38062f7904e83f18"
+  },
+  {
+   "file": "outputs_DeepFillv2.zip",
+   "extracts_to": "outputs/DeepFillv2/",
+   "n_files": 1000,
+   "bytes": 122559935,
+   "sha256": "91861cb432dd21227ced3225728d002d33c51737d921c06ad8593e054bc79d91"
+  },
+  {
+   "file": "outputs_E2I.zip",
+   "extracts_to": "outputs/E2I/",
+   "n_files": 1000,
+   "bytes": 103236350,
+   "sha256": "55fd6a745d123d0a93799d5cd7a6fe71407c3e42751cd63e253284f9b3435a07"
+  },
+  {
+   "file": "outputs_EdgeConnect.zip",
+   "extracts_to": "outputs/EdgeConnect/",
+   "n_files": 1000,
+   "bytes": 105172295,
+   "sha256": "fb626378dd5895241fc6c743b8f7f312a08558462a0cfd15730b31462f0a41e1"
+  },
+  {
+   "file": "outputs_LaMa.zip",
+   "extracts_to": "outputs/LaMa/",
+   "n_files": 1000,
+   "bytes": 104326535,
+   "sha256": "77fb6a3449d97541f052f0adfdf75b340a49257d4c753950671415dddd099501"
+  },
+  {
+   "file": "outputs_MADF.zip",
+   "extracts_to": "outputs/MADF/",
+   "n_files": 1000,
+   "bytes": 102584616,
+   "sha256": "e37047a276bd13d954c0e5eb7d36c36f2ea009eda131b12abae23a007061e326"
+  },
+  {
+   "file": "outputs_MADIN.zip",
+   "extracts_to": "outputs/MADIN/",
+   "n_files": 1000,
+   "bytes": 103931761,
+   "sha256": "6275edda59aff35a1ad5e7b9a9cd350ce57691f1a87790374d7296121592ede6"
+  },
+  {
+   "file": "outputs_MEDFE.zip",
+   "extracts_to": "outputs/MEDFE/",
+   "n_files": 1000,
+   "bytes": 104902082,
+   "sha256": "209fb86e0ce1a0f1d0c365de62d8d534d6a568c1920232e6d23a1f76c2e25f12"
+  },
+  {
+   "file": "outputs_MISF.zip",
+   "extracts_to": "outputs/MISF/",
+   "n_files": 1000,
+   "bytes": 103649839,
+   "sha256": "d66a3556539925acd3be4d4b154d3554e52b8905fd5574b31fdb4012c8a472d4"
+  },
+  {
+   "file": "outputs_PEN-Net.zip",
+   "extracts_to": "outputs/PEN-Net/",
+   "n_files": 1000,
+   "bytes": 104024781,
+   "sha256": "26db070e6fda080620bbab77e74910b11590096db1e821aa79e0e4bf8e039046"
+  },
+  {
+   "file": "outputs_Pluralistic.zip",
+   "extracts_to": "outputs/Pluralistic/",
+   "n_files": 1000,
+   "bytes": 104380594,
+   "sha256": "fbca7d7c09ec20522362567cbe8749c2c643f9d715cd9ff82dad58d6cb50dcc3"
+  },
+  {
+   "file": "outputs_RePaint.zip",
+   "extracts_to": "outputs/RePaint/",
+   "n_files": 1000,
+   "bytes": 109244070,
+   "sha256": "1a12a8e88ff9467c206392484d3050cb33923f16e435a4ce332fe023a6ae2fdd"
+  },
+  {
+   "file": "outputs_SCAT.zip",
+   "extracts_to": "outputs/SCAT/",
+   "n_files": 1000,
+   "bytes": 102673124,
+   "sha256": "41f50ce059cdf42e052b9c1753eb6d363e83af4551a00eb4b6c290baa67d1eb2"
+  },
+  {
+   "file": "outputs_StrDiff.zip",
+   "extracts_to": "outputs/StrDiff/",
+   "n_files": 1000,
+   "bytes": 124806313,
+   "sha256": "b072249ced034416991e9764500606aa37b37cc5c0d7654343a8021d6c9d0469"
+  },
+  {
+   "file": "outputs_StructureFlow.zip",
+   "extracts_to": "outputs/StructureFlow/",
+   "n_files": 1000,
+   "bytes": 104001725,
+   "sha256": "a67b69454e765f7b033797982afd2b8bd6e6d3bab8304fa966fc99e55069bd5e"
+  },
+  {
+   "file": "outputs_VHII.zip",
+   "extracts_to": "outputs/VHII/",
+   "n_files": 1000,
+   "bytes": 103641590,
+   "sha256": "a6bbec5b215e390d862f4e464374632988acbcd8314998f8b7751cb469384215"
+  },
+  {
+   "file": "outputs_WaveFill.zip",
+   "extracts_to": "outputs/WaveFill/",
+   "n_files": 1000,
+   "bytes": 105091124,
+   "sha256": "0fac23f12b3506fcadff33f86d799a80cd48b5519886f27c65a23ca429abcebe"
+  },
+  {
+   "file": "outputs_ZITS.zip",
+   "extracts_to": "outputs/ZITS/",
+   "n_files": 1000,
+   "bytes": 126367938,
+   "sha256": "48a9675f8f2bf365e63603a23011fcfa297606ce021bf8fc6ed3969844884041"
+  },
+  {
+   "file": "outputs_latent-code.zip",
+   "extracts_to": "outputs/latent-code/",
+   "n_files": 1000,
+   "bytes": 103866669,
+   "sha256": "98be70cf72f956119f442a0d143d3da4fd6ea4db5e3a178604ae9396fe0a610b"
+  },
+  {
+   "file": "outputs_spa-former.zip",
+   "extracts_to": "outputs/spa-former/",
+   "n_files": 1000,
+   "bytes": 104052033,
+   "sha256": "9fc247e3152bf299c521ce5db3539b3fc055f8fd4bbcf3152fe0617dba9e3986"
+  },
+  {
+   "file": "samples_table10_BAT-Fill.zip",
+   "extracts_to": "samples_table10/BAT-Fill/",
+   "n_files": 1000,
+   "bytes": 103625057,
+   "sha256": "03f018b2350eaf6d8742b2f75906c226ee7bc77a1c1540e31127ff9c56ce51d9"
+  },
+  {
+   "file": "samples_table10_CoModGAN.zip",
+   "extracts_to": "samples_table10/CoModGAN/",
+   "n_files": 6000,
+   "bytes": 712171412,
+   "sha256": "67c702bf81a1074484e434e38b1f566ae6aad2a6f322345edb13a5064c460f29"
+  },
+  {
+   "file": "samples_table10_Pluralistic.zip",
+   "extracts_to": "samples_table10/Pluralistic/",
+   "n_files": 6000,
+   "bytes": 625992669,
+   "sha256": "46a4e9c653fa980ca2dc09bf95d20182460c7800a6d26983722a7d49778c8517"
+  },
+  {
+   "file": "samples_table10_RePaint.zip",
+   "extracts_to": "samples_table10/RePaint/",
+   "n_files": 110,
+   "bytes": 11912971,
+   "sha256": "619b173ed47f306555aec3226b76f014c90ae06e6714bf9540fa6f7e45a8cba6"
+  },
+  {
+   "file": "samples_table10_StrDiff.zip",
+   "extracts_to": "samples_table10/StrDiff/",
+   "n_files": 100,
+   "bytes": 10327907,
+   "sha256": "1f862c4ff5cb5d035f9b640ecff1990d2f74c5a9f60a3a0d4f49c2a9143d9149"
+  },
+  {
+   "file": "samples_table10_latent-code.zip",
+   "extracts_to": "samples_table10/latent-code/",
+   "n_files": 1000,
+   "bytes": 103347790,
+   "sha256": "d86d637eaa14c6e3b24b96b490cef57afb3554902b91f4e531b2551fbd90afba"
+  }
+ ]
+}

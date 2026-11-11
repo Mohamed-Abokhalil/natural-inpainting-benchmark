@@ -1,0 +1,2 @@
+method,gen,year,params,flops,steps,latency,memory
+BAT-Fill,G4,0,101.783556,nan,257,10946.014875993133,1.2950515747070312

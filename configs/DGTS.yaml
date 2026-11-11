@@ -1,0 +1,13 @@
+method: DGTS
+family: G3
+repository: https://github.com/htyjers/DGTS-Inpainting.git
+commit: 49b9bc01f19309d1b88f2424f97353f0f0452965
+checkpoints:
+  - code/test/checkpoints/places.pth
+  - code/test/checkpoints/latest_net_G.pth
+inference_script: "code/test/test.py (official, modified paths)"
+native_resolution: "256 (coarse 64x64 + upsampler)"
+inference_resolution: "256"
+benchmark_resolution: 256
+mask_convention_input: 255 = hole (data/masks)
+notes: "intermediate JPEG round-trips in official test code; output not composited (mean |known-pixel diff| 1.87 grey levels)"

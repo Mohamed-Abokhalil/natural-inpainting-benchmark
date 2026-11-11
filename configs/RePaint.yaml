@@ -1,0 +1,12 @@
+method: RePaint
+family: G5
+repository: https://github.com/andreas128/RePaint.git
+commit: 8e2a0552a0cc306e623da807d353915f1af17726
+checkpoints:
+  - data/pretrained/places_250000.pt
+inference_script: "test.py with confs/face_example.yml (model_path -> places_250000.pt)"
+native_resolution: "256"
+inference_resolution: "256"
+benchmark_resolution: 256
+mask_convention_input: 255 = hole (data/masks)
+notes: "T=250 (respaced from 1000, linear), jump length 10, 10 resamplings, no classifier guidance; unseeded; not composited"

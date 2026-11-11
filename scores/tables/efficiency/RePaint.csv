@@ -1,0 +1,2 @@
+method,gen,year,params,flops,steps,latency,memory
+RePaint,G5,0,552.814086,1119.832768512,2410,277277.0177333926,4.714761734008789

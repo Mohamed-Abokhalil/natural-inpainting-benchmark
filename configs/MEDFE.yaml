@@ -1,0 +1,14 @@
+method: MEDFE
+family: G3
+repository: https://github.com/KumapowerLIU/Rethinking-Inpainting-MEDFE.git
+commit: 3c5e8e8bd4d6e0c1df22fee4e67f5ae8c645c7fa
+checkpoints:
+  - checkpoints/place2/EN.pkl
+  - checkpoints/place2/DE.pkl
+  - checkpoints/place2/MEDEF.pkl
+inference_script: "test.py (official, modified)"
+native_resolution: "256"
+inference_resolution: "256"
+benchmark_resolution: 256
+mask_convention_input: 255 = hole (data/masks)
+notes: "structure image (RTV smoothing) input"

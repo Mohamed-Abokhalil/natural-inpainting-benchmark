@@ -1,0 +1,12 @@
+method: MADF
+family: G1
+repository: https://github.com/MADF-inpainting/Pytorch-MADF.git
+commit: 6fdbf44df002bdf214100784dc83c53aa0e27e75
+checkpoints:
+  - checkpoints/places2.pth
+inference_script: "test_madf.py (untracked)"
+native_resolution: "fully convolutional"
+inference_resolution: "256"
+benchmark_resolution: 256
+mask_convention_input: 255 = hole (data/masks)
+notes: "composited at 256 (known pixels exact)"

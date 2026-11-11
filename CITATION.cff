@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this benchmark, please cite the paper below."
+title: "Unified Places2 inpainting benchmark (code, configurations and per-image scores)"
+type: software
+license: MIT
+repository-code: "<<REPO_URL>>"
+doi: "<<DOI>>"
+authors:
+  - given-names: "Mohamed"
+    family-names: "Mahmoud"
+  - given-names: "Mostafa Farouk"
+    family-names: "Senussi"
+  - given-names: "Mahmoud"
+    family-names: "Abdalla"
+  - given-names: "Mahmoud SalahEldin"
+    family-names: "Kasem"
+  - given-names: "Hyun-Soo"
+    family-names: "Kang"
+preferred-citation:
+  type: article
+  title: "From Convolutions to Diffusion: A Decade of Deep Learning for Natural Image Inpainting"
+  journal: "Neurocomputing"
+  status: submitted
+  authors:
+    - given-names: "Mohamed"
+      family-names: "Mahmoud"
+    - given-names: "Mostafa Farouk"
+      family-names: "Senussi"
+    - given-names: "Mahmoud"
+      family-names: "Abdalla"
+    - given-names: "Mahmoud SalahEldin"
+      family-names: "Kasem"
+    - given-names: "Hyun-Soo"
+      family-names: "Kang"

@@ -1,0 +1,15 @@
+method: ZITS
+family: G3
+repository: https://github.com/DQiaole/ZITS_inpainting.git
+commit: 6f4a47bb03bfb82a4860fc55ae0719ab0db8f6eb
+checkpoints:
+  - ckpt/zits_places2/InpaintingModel_best_gen.pth
+  - ckpt/best_transformer_places2.pth
+  - ckpt/StructureUpsampling.pth
+  - ckpt/best_lsm_hawp.pth
+inference_script: "FTR_inference.py (official, modified)"
+native_resolution: "256"
+inference_resolution: "256"
+benchmark_resolution: 256
+mask_convention_input: 255 = hole (data/masks)
+notes: "HAWP wireframes precomputed (places2_val_wireframes)"

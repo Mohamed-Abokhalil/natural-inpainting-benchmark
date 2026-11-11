@@ -1,0 +1,13 @@
+method: BAT-Fill
+family: G4
+repository: https://github.com/yingchen001/BAT-Fill.git
+commit: 366fcc867b202834717bc6039f4a60b2865052bb
+checkpoints:
+  - checkpoints/places2_bat_pretrain/latest_tran.pth
+  - checkpoints/places2_bat_pretrain/latest_net_G.pth
+inference_script: "bat_sample.py (official, modified path handling)"
+native_resolution: "256 (tokens 32x32)"
+inference_resolution: "256"
+benchmark_resolution: 256
+mask_convention_input: 255 = hole (data/masks)
+notes: "top-k=50 autoregressive sampling, num_sample 1"

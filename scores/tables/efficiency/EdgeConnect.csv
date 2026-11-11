@@ -1,0 +1,2 @@
+method,gen,year,params,flops,steps,latency,memory
+EdgeConnect,G3,0,21.535684,96.750010368,1,13.431458994746208,0.3043398857116699

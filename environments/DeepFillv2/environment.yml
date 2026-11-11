@@ -1,0 +1,16 @@
+# conda environment for DeepFillv2 (TensorFlow 2.10.1 is the last native-Windows GPU build; on Linux any TF 2.10 build works)
+name: bench-deepfillv2
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9
+  - cudatoolkit=11.2
+  - cudnn=8.1.0
+  - pip
+  - pip:
+    - -r requirements.txt
+# conda package list recorded on the measurement machine:
+#   cudatoolkit=11.2.2=h7d7167e_13
+#   cudnn=8.1.0.77=h3e0f4f4_0
+#   opencv-python=4.11.0.86=pypi_0
+#   python=3.9.25=h716150d_1

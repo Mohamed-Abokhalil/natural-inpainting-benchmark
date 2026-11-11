@@ -1,0 +1,122 @@
+{
+ "psnr": {
+  "max_rank_change": 7,
+  "changed": [
+   "Pluralistic",
+   "CoModGAN",
+   "latent-code",
+   "EdgeConnect",
+   "MEDFE",
+   "CTSDG",
+   "BAT-Fill",
+   "WaveFill",
+   "spa-former",
+   "RePaint"
+  ],
+  "top2_final": [
+   "SCAT",
+   "MISF"
+  ],
+  "top2_comp": [
+   "SCAT",
+   "MISF"
+  ]
+ },
+ "ssim": {
+  "max_rank_change": 5,
+  "changed": [
+   "DeepFillv2",
+   "PEN-Net",
+   "CoModGAN",
+   "latent-code",
+   "EdgeConnect",
+   "E2I",
+   "MEDFE",
+   "DGTS",
+   "ZITS",
+   "WaveFill",
+   "RePaint",
+   "StrDiff"
+  ],
+  "top2_final": [
+   "SCAT",
+   "MADIN"
+  ],
+  "top2_comp": [
+   "SCAT",
+   "MADIN"
+  ]
+ },
+ "fid": {
+  "max_rank_change": 4,
+  "changed": [
+   "DeepFillv2",
+   "PEN-Net",
+   "CoModGAN",
+   "latent-code",
+   "EdgeConnect",
+   "DGTS",
+   "CMT",
+   "spa-former",
+   "RePaint"
+  ],
+  "top2_final": [
+   "SCAT",
+   "MADIN"
+  ],
+  "top2_comp": [
+   "SCAT",
+   "MADIN"
+  ]
+ },
+ "lpips": {
+  "max_rank_change": 6,
+  "changed": [
+   "DeepFillv2",
+   "PEN-Net",
+   "CoModGAN",
+   "latent-code",
+   "EdgeConnect",
+   "MEDFE",
+   "DGTS",
+   "WaveFill",
+   "spa-former"
+  ],
+  "top2_final": [
+   "MADIN",
+   "SCAT"
+  ],
+  "top2_comp": [
+   "MADIN",
+   "SCAT"
+  ]
+ },
+ "l1": {
+  "max_rank_change": 10,
+  "changed": [
+   "DeepFillv2",
+   "Pluralistic",
+   "PEN-Net",
+   "CoModGAN",
+   "latent-code",
+   "EdgeConnect",
+   "StructureFlow",
+   "MEDFE",
+   "CTSDG",
+   "DGTS",
+   "ZITS",
+   "BAT-Fill",
+   "WaveFill",
+   "RePaint",
+   "StrDiff"
+  ],
+  "top2_final": [
+   "SCAT",
+   "MADF"
+  ],
+  "top2_comp": [
+   "SCAT",
+   "MADF"
+  ]
+ }
+}

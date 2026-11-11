@@ -1,0 +1,2 @@
+method,gen,year,params,flops,steps,latency,memory
+LaMa,G4,0,50.975875,55.06072576,1,15.65608900040388,0.24014854431152344

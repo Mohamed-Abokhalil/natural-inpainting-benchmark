@@ -1,0 +1,2 @@
+method,gen,year,params,flops,steps,latency,memory
+MADF,G1,0,85.141214,28.260627456,1,18.177448008209467,1.262308120727539

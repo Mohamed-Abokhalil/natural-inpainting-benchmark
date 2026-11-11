@@ -1,0 +1,13 @@
+method: EdgeConnect
+family: G3
+repository: https://github.com/knazeri/edge-connect.git
+commit: 3142579785c5c8cc92ad655616d40f4f52fc7ec1
+checkpoints:
+  - checkpoints/places2/EdgeModel_gen.pth
+  - checkpoints/places2/InpaintingModel_gen.pth
+inference_script: "test.py (official, config edits)"
+native_resolution: "256"
+inference_resolution: "256"
+benchmark_resolution: 256
+mask_convention_input: 255 = hole (data/masks)
+notes: "Canny edges (sigma 2) computed on CPU"

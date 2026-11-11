@@ -1,0 +1,2 @@
+method,gen,year,params,flops,steps,latency,memory
+WaveFill,G4,0,49.265937,343.147937792,1,42.14644799940288,1.110231876373291

@@ -1,0 +1,12 @@
+method: CoModGAN
+family: G2
+repository: https://github.com/zengxianyu/co-mod-gan-pytorch.git
+commit: a178bfd15d2675214532151037ef8f6e34b3fd91
+checkpoints:
+  - checkpoints/comod-places-512/co-mod-gan-places2-050000_net_G_ema.pth
+inference_script: "test.py (official PyTorch port, modified to also save 256 copies)"
+native_resolution: "512"
+inference_resolution: "512 (inputs NII/test_256_places_1K/512_masked, 512_mask, cv2 INTER_AREA up; output cv2 INTER_LANCZOS4 down to 256)"
+benchmark_resolution: 256
+mask_convention_input: 255 = hole (data/masks)
+notes: "third-party PyTorch port (zengxianyu) of official TF CoModGAN with converted Places 512 weights; not composited"

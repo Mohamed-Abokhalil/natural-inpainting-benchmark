@@ -1,0 +1,2 @@
+method,gen,year,params,flops,steps,latency,memory
+CTSDG,G3,0,52.147789,91.769274368,1,22.402843004092574,0.8446435928344727

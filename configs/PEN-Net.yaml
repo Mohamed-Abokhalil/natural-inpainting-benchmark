@@ -1,0 +1,12 @@
+method: PEN-Net
+family: G2
+repository: https://github.com/researchmm/PEN-Net-for-Inpainting.git
+commit: 8721a55d72b4b621a45e805cd6980976c085f4eb
+checkpoints:
+  - release_model/pennet_places2_square256/gen_00000.pth
+inference_script: "test_pennet.py (untracked)"
+native_resolution: "256 (only release: Places2, square masks)"
+inference_resolution: "256"
+benchmark_resolution: 256
+mask_convention_input: 255 = hole (data/masks)
+notes: "only released Places2 checkpoint was trained with square masks"

@@ -1,0 +1,13 @@
+method: E2I
+family: G3
+repository: https://github.com/powder21/E2I-inpainting.git
+commit: 5ffecc8206f112ab98f8452963dbe0b0f6dc421e
+checkpoints:
+  - checkpoints/
+  - hed.npy
+inference_script: "pipeline_master_tcsvt.py (official, modified)"
+native_resolution: "256"
+inference_resolution: "256"
+benchmark_resolution: 256
+mask_convention_input: 255 = hole (data/masks)
+notes: "TensorFlow 1.x; HED edge detector"

@@ -1,0 +1,2 @@
+method,gen,year,params,flops,steps,latency,memory
+spa-former,G4,0,13.201816,46.72671744,1,28.06058299727738,0.3021073341369629

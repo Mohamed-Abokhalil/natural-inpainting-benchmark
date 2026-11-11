@@ -1,0 +1,12 @@
+method: MISF
+family: G4
+repository: https://github.com/tsingqguo/misf.git
+commit: 775ef7d576a43407f9b447dcb80ba10f5c8c6148
+checkpoints:
+  - checkpoints/MISF/places2_InpaintingModel_gen.pth
+inference_script: "test via main.py (official, config edits)"
+native_resolution: "256"
+inference_resolution: "256"
+benchmark_resolution: 256
+mask_convention_input: 255 = hole (data/masks)
+notes: "composited"

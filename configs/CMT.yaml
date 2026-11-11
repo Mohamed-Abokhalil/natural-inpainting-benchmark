@@ -1,0 +1,12 @@
+method: CMT
+family: G4
+repository: https://github.com/keunsoo-ko/CMT.git
+commit: 02de33d950f318dbce908133dd7a2441875995f2
+checkpoints:
+  - ckpt/Place2.pth
+inference_script: "demo.py (official)"
+native_resolution: "256"
+inference_resolution: "256"
+benchmark_resolution: 256
+mask_convention_input: 255 = hole (data/masks)
+notes: "composited"

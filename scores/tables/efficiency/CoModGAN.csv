@@ -1,0 +1,2 @@
+method,gen,year,params,flops,steps,latency,memory
+CoModGAN,G2,0,79.792231,120.3817984,1,22.99449099227786,0.8427877426147461

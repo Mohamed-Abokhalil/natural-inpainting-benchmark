@@ -1,0 +1,17 @@
+# generated data: distributed through Zenodo (download_outputs.py), never committed
+outputs/
+samples_table10/
+_downloads/
+*.zip
+# Python / OS
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+# local environments and checkpoints
+envs/
+.venv/
+*.ckpt
+*.pth
+*.pt

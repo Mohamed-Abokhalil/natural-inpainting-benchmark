@@ -1,0 +1,13 @@
+method: StructureFlow
+family: G3
+repository: https://github.com/RenYurui/StructureFlow
+commit: 1ac8f559475452e6b674699671c6b34f000d9ebd
+checkpoints:
+  - checkpoints/places/checkpoints/latest_net_s_gen.pth
+  - checkpoints/places/checkpoints/latest_net_f_gen.pth
+inference_script: "test.py (official, config edits)"
+native_resolution: "256"
+inference_resolution: "256"
+benchmark_resolution: 256
+mask_convention_input: 255 = hole (data/masks)
+notes: "official resample2d CUDA kernel replaced by a pure-PyTorch re-implementation (src/resample2d.py, local modification)"

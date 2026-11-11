@@ -1,0 +1,2 @@
+method,gen,year,params,flops,steps,latency,memory
+CMT,G4,0,143.104135,76.581041152,1,54.36418600380421,1.2421369552612305

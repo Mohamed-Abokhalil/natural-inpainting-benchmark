@@ -1,0 +1,4 @@
+cudatoolkit=11.2.2=h7d7167e_13
+cudnn=8.1.0.77=h3e0f4f4_0
+opencv-python=4.11.0.86=pypi_0
+python=3.9.25=h716150d_1

@@ -1,0 +1,12 @@
+method: SCAT
+family: G2
+repository: https://github.com/zzw-zjgsu/Generative-Image-Inpainting
+commit: 83be9e878bd8de8fee8b7c13f36d1a5ab9172607
+checkpoints:
+  - src/checkpoints/Places2_G1000000.pt
+inference_script: "src/test.py (official, modified output paths)"
+native_resolution: "256"
+inference_resolution: "256"
+benchmark_resolution: 256
+mask_convention_input: 255 = hole (data/masks)
+notes: "composited"

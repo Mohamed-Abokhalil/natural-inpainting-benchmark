@@ -1,0 +1,2 @@
+method,gen,year,params,flops,steps,latency,memory
+SCAT,G2,0,15.200835,72.876032,1,11.22520100325346,0.20705366134643555

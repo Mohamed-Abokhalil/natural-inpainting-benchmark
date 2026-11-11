@@ -1,0 +1,9 @@
+{
+ "image_sampling": "random.seed(42); random.sample(os.listdir(<Places365 test_256 folder renamed 00001.png..328500.png>), 1000) -- verified to reproduce the 1,000 images exactly (NII/test_256_places_1K/dataset_subset.py)",
+ "mask_pairing": "unseeded random.choice over QD-IMD test masks; realised pairing in benchmark_pairs.csv (recovered by exact matching)",
+ "qualitative_scene_seed": 142,
+ "diversity_subset_seed": 2026,
+ "stochastic_reruns": "torch.manual_seed(seed*100000 + index of image in sorted list); seeds 0 (10 samples, subsets) and 1-5 (full set)",
+ "bootstrap_seed": 0,
+ "kid_subset_seed": 0
+}

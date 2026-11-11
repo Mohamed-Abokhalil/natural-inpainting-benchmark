@@ -1,0 +1,2 @@
+method,gen,year,params,flops,steps,latency,memory
+StructureFlow,G3,0,92.530886,255.102287872,1,76.23662299476564,0.9512481689453125

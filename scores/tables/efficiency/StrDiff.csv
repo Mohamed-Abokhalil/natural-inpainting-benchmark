@@ -1,0 +1,2 @@
+method,gen,year,params,flops,steps,latency,memory
+StrDiff,G5,0,313.208965,169.51689673526673,4364,113449.2309667791,3.00038480758667
