@@ -1,6 +1,6 @@
 {
  "record_id": "<<ZENODO_RECORD_ID>>",
- "doi": "<<DOI>>",
+ "doi": "10.5281/zenodo.24152118",
  "note": "Replace record_id with the numeric Zenodo record that holds the archives below (see PUBLISHING.md).",
  "archives": [
   {

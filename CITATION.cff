@@ -3,8 +3,8 @@ message: "If you use this benchmark, please cite the paper below."
 title: "Unified Places2 inpainting benchmark (code, configurations and per-image scores)"
 type: software
 license: MIT
-repository-code: "<<REPO_URL>>"
-doi: "<<DOI>>"
+repository-code: "https://github.com/Mohamed-Abokhalil/natural-inpainting-benchmark"
+doi: "10.5281/zenodo.24152118"
 authors:
   - given-names: "Mohamed"
     family-names: "Mahmoud"
