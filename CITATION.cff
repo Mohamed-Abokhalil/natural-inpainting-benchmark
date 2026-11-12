@@ -2,20 +2,41 @@ cff-version: 1.2.0
 message: "If you use this benchmark, please cite the paper below."
 title: "Unified Places2 inpainting benchmark (code, configurations and per-image scores)"
 type: software
+version: "v1.0"
 license: MIT
 repository-code: "https://github.com/Mohamed-Abokhalil/natural-inpainting-benchmark"
+url: "https://github.com/Mohamed-Abokhalil/natural-inpainting-benchmark"
 doi: "10.5281/zenodo.24152118"
+abstract: >-
+  Code, configurations, test-set definition (Places365-Standard image list, QD-IMD masks, image-mask pairings, seeds)
+  and per-image scores of the unified benchmark of 24 natural-image inpainting methods in "From Convolutions to
+  Diffusion: A Decade of Deep Learning for Natural Image Inpainting". The generated outputs are archived in a separate
+  Zenodo record (see zenodo_record.json).
+keywords:
+  - image inpainting
+  - image completion
+  - benchmark
+  - Places2
+  - deep learning
+  - generative models
+  - diffusion models
+  - evaluation
 authors:
   - given-names: "Mohamed"
     family-names: "Mahmoud"
+    affiliation: "Department of Information and Communication Engineering, Chungbuk National University, Republic of Korea; Information Technology Department, Assiut University, Egypt"
   - given-names: "Mostafa Farouk"
     family-names: "Senussi"
+    affiliation: "Department of Information and Communication Engineering, Chungbuk National University, Republic of Korea; Information Technology Department, Assiut University, Egypt"
   - given-names: "Mahmoud"
     family-names: "Abdalla"
+    affiliation: "Department of Information and Communication Engineering, Chungbuk National University, Republic of Korea"
   - given-names: "Mahmoud SalahEldin"
     family-names: "Kasem"
+    affiliation: "Department of Information and Communication Engineering, Chungbuk National University, Republic of Korea; Multimedia Department, Assiut University, Egypt"
   - given-names: "Hyun-Soo"
     family-names: "Kang"
+    affiliation: "Department of Information and Communication Engineering, Chungbuk National University, Republic of Korea"
 preferred-citation:
   type: article
   title: "From Convolutions to Diffusion: A Decade of Deep Learning for Natural Image Inpainting"
