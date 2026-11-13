@@ -1,7 +1,7 @@
 {
- "record_id": "<<ZENODO_RECORD_ID>>",
- "doi": "10.5281/zenodo.24152118",
- "note": "Replace record_id with the numeric Zenodo record that holds the archives below (see PUBLISHING.md).",
+ "record_id": "24152790",
+ "doi": "10.5281/zenodo.24152790",
+ "note": "Zenodo record holding the generated outputs (archives below); read by download_outputs.py.",
  "archives": [
   {
    "file": "outputs_BAT-Fill.zip",
@@ -213,5 +213,7 @@
    "bytes": 103347790,
    "sha256": "d86d637eaa14c6e3b24b96b490cef57afb3554902b91f4e531b2551fbd90afba"
   }
- ]
+ ],
+ "software_doi": "10.5281/zenodo.24152118",
+ "license": "CC-BY-NC-4.0"
 }

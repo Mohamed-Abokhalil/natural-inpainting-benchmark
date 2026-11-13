@@ -4,7 +4,7 @@ Code, configurations, test-set definition and per-image scores of the unified be
 
 > M. Mahmoud, M. F. Senussi, M. Abdalla, M. S. Kasem, H.-S. Kang. **From Convolutions to Diffusion: A Decade of Deep Learning for Natural Image Inpainting.** *Neurocomputing* (under review, manuscript NEUCOM-D-26-17181).
 
-Repository: https://github.com/Mohamed-Abokhalil/natural-inpainting-benchmark · Archived snapshot: https://doi.org/10.5281/zenodo.24152118 · Generated outputs: the Zenodo record named in `zenodo_record.json` (see below)
+Repository: https://github.com/Mohamed-Abokhalil/natural-inpainting-benchmark · Archived snapshot: https://doi.org/10.5281/zenodo.24152118 · Generated outputs: https://doi.org/10.5281/zenodo.24152790 (CC BY-NC 4.0)
 
 Twenty-four inpainting methods (2019–2026) are evaluated with their authors' released Places2 checkpoints under one protocol:
 1,000 Places365-Standard test images (official 256×256 release), each paired with one QD-IMD test mask (hole ratio up to 50 %, five coverage bins),
@@ -65,11 +65,12 @@ Confidence intervals, KID, P-/U-IDS, NIQE (Table 9), diversity (Table 10), per-c
 
 ## Getting the generated outputs
 
-The 24×1,000 benchmark outputs (2.5 GB) and the Table 10 samples (1.5 GB) are archived on Zenodo, one zip per method:
+The 24×1,000 benchmark outputs (2.5 GB) and the Table 10 samples (1.5 GB) are archived on Zenodo, one zip per method, at https://doi.org/10.5281/zenodo.24152790 (licence CC BY-NC 4.0; `SHA256SUMS.txt` lists the checksums). They can be downloaded from the record page or with the script, which verifies every archive and unpacks it:
 
 ```bash
 python download_outputs.py            # all archives -> outputs/<method>/, samples_table10/<method>/
 python download_outputs.py --only outputs
+python download_outputs.py --files outputs_LaMa.zip outputs_SCAT.zip   # selected archives only
 ```
 
 ## Reproducing the tables
@@ -128,9 +129,30 @@ python code/runners/gan_run.py --method spa-former --list all --seeds 0 --out ou
 The code is released under the MIT license (`LICENSE`). The data are not: the test images come from Places365-Standard
 (Zhou et al., MIT CSAIL; distributed for non-commercial research and educational use under the Places terms of use) and the masks from the
 Quick Draw Irregular Mask Dataset (QD-IMD; derived from the Google Quick, Draw! data). The masks in `data/masks/`, the generated outputs and all
-derived images inherit the licenses and terms of use of Places2 and QD-IMD; check those terms before redistributing them. The method outputs were
+derived images inherit the licenses and terms of use of Places2 and QD-IMD; check those terms before redistributing them. Accordingly, the archived outputs (https://doi.org/10.5281/zenodo.24152790) are released under CC BY-NC 4.0. The method outputs were
 produced with the authors' released checkpoints, which have their own licenses (see each repository in `configs/`).
 
 ## Citation
 
-See `CITATION.cff`, or cite the paper above.
+Please cite the paper above. To cite the released artifacts (see also `CITATION.cff`):
+
+```bibtex
+@software{mahmoud2026benchmark_code,
+  author    = {Mahmoud, Mohamed and Senussi, Mostafa Farouk and Abdalla, Mahmoud and Kasem, Mahmoud SalahEldin and Kang, Hyun-Soo},
+  title     = {Unified Places2 inpainting benchmark (code, configurations and per-image scores)},
+  version   = {v1.0},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.24152118},
+  url       = {https://github.com/Mohamed-Abokhalil/natural-inpainting-benchmark}
+}
+
+@dataset{mahmoud2026benchmark_outputs,
+  author    = {Mahmoud, Mohamed and Senussi, Mostafa Farouk and Abdalla, Mahmoud and Kasem, Mahmoud SalahEldin and Kang, Hyun-Soo},
+  title     = {Generated outputs of the unified Places2 inpainting benchmark (NEUCOM-D-26-17181)},
+  version   = {v1.0},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.24152790}
+}
+```

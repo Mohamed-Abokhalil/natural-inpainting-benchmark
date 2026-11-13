@@ -3,7 +3,7 @@ Original pairing script used unseeded random.choice; this matches masks by conte
 import os, sys, hashlib, json, csv
 import numpy as np, cv2
 from PIL import Image
-QD = "D:/Face Unmasking/qd_imd"
+QD = os.environ.get("QDIMD_DIR", "D:/Face Unmasking/qd_imd")   # folder of the QD-IMD release
 BM = os.path.join(os.environ.get("BENCH_ROOT", r"D:\Face Unmasking\Inpainting_Framwork\comparison\From-Pixel-to-Face-(survey)"), r"data/places2/mask")
 OUT = sys.argv[1]
 def h(a): return hashlib.md5(np.packbits(a).tobytes()).hexdigest()
