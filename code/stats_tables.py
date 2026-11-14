@@ -15,7 +15,7 @@ import json, os, sys
 from pathlib import Path
 import numpy as np, pandas as pd, torch
 
-ROOT = Path(os.environ.get("BENCH_ROOT", r"D:\Face Unmasking\Inpainting_Framwork\comparison\From-Pixel-to-Face-(survey)"))
+ROOT = Path(r"D:\Face Unmasking\Inpainting_Framwork\comparison\From-Pixel-to-Face-(survey)")
 RES = ROOT / "revision" / "results"
 VARIANT = sys.argv[1] if len(sys.argv) > 1 else "asis"
 OUT = RES / "stats" / VARIANT; OUT.mkdir(parents=True, exist_ok=True)
@@ -106,11 +106,11 @@ point.to_csv(OUT / "point_estimates.csv")
 bs_path = OUT / "bootstrap.npz"
 rng = np.random.default_rng(SEED)
 idx = rng.integers(0, n, size=(B, n))
-if bs_path.exists():
-    bs = dict(np.load(bs_path))
-else:
-    bs = {}
-    for m in METHODS:
+FORCE = [x for x in os.environ.get("STATS_RECOMPUTE", "").split(",") if x]   # methods whose outputs changed
+bs = dict(np.load(bs_path)) if bs_path.exists() else {}
+todo = [m for m in METHODS if m in FORCE or f"{m}|fid" not in bs]
+if todo:
+    for m in todo:
         d = pi[m]
         for k in ["psnr", "ssim", "lpips", "l1"]:
             v = d[k].to_numpy(); bs[f"{m}|{k}"] = v[idx].mean(1)

@@ -10,8 +10,8 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import Rectangle
 matplotlib.rcParams.update({"font.family": "serif", "font.serif": ["DejaVu Serif"], "pdf.fonttype": 42})
 
-DATA = os.path.join(os.environ.get("BENCH_ROOT", r"D:\Face Unmasking\Inpainting_Framwork\comparison\From-Pixel-to-Face-(survey)"), r"data/places2")
-OUT = os.path.join(os.environ.get("BENCH_ROOT", r"D:\Face Unmasking\Inpainting_Framwork\comparison\From-Pixel-to-Face-(survey)"), r"revision/results/figures")
+DATA = "D:/Face Unmasking/Inpainting_Framwork/comparison/From-Pixel-to-Face-(survey)/data/places2"
+OUT = "D:/Face Unmasking/Inpainting_Framwork/comparison/From-Pixel-to-Face-(survey)/revision/results/figures"
 CROP = 85
 
 
@@ -58,7 +58,7 @@ def main():
     for r, (bl, f) in enumerate(scenes):
         mi, m = masked_input(f); pos = best_window(m)
         tiles = [mi, crop3(img(os.path.join(DATA, "gt"), f), m, pos)]
-        tiles += [crop3(img(os.path.join(DATA, "SOTA", d), f), m, pos) for _, d, _ in methods]
+        tiles += [crop3(img(os.path.join(os.path.dirname(OUT), "rerun", d) if d in ("ZITS", "CTSDG", "VHII", "spa-former", "Pluralistic") else os.path.join(DATA, "SOTA", d), f), m, pos) for _, d, _ in methods]
         for c, t in enumerate(tiles):
             ax = axes[r][c]; ax.imshow(t, interpolation="nearest"); ax.set_xticks([]); ax.set_yticks([])
             for s in ax.spines.values(): s.set_visible(False)

@@ -9,4 +9,5 @@ native_resolution: "256"
 inference_resolution: "256"
 benchmark_resolution: 256
 mask_convention_input: 255 = hole (data/masks)
-notes: "composited"
+notes: "PUBLISHED RUN INVALID: the benchmark run read the white-filled masked images, so the Canny edge prior traced the hole boundaries. Corrected re-run: test.py --image_root <complete test images> --mask_root data/masks --number_eval 1000 (the dataset class masks image and edges itself); composited"
+repo_dependencies: "environments/CTSDG/repo_declared_requirements.txt (as declared by the repository at the pinned commit; the versions actually installed for the original inference run were not recorded)"

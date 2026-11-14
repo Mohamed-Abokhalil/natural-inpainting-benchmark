@@ -4,44 +4,44 @@ Code, configurations, test-set definition and per-image scores of the unified be
 
 > M. Mahmoud, M. F. Senussi, M. Abdalla, M. S. Kasem, H.-S. Kang. **From Convolutions to Diffusion: A Decade of Deep Learning for Natural Image Inpainting.** *Neurocomputing* (under review, manuscript NEUCOM-D-26-17181).
 
-Repository: https://github.com/Mohamed-Abokhalil/natural-inpainting-benchmark · Archived snapshot: https://doi.org/10.5281/zenodo.24152118 · Generated outputs: https://doi.org/10.5281/zenodo.24152790 (CC BY-NC 4.0)
+Repository: https://github.com/Mohamed-Abokhalil/natural-inpainting-benchmark · Archived snapshot: https://doi.org/10.5281/zenodo.24152117 · Generated outputs: https://doi.org/10.5281/zenodo.24152789 (CC BY-NC 4.0)
 
 Twenty-four inpainting methods (2019–2026) are evaluated with their authors' released Places2 checkpoints under one protocol:
-1,000 Places365-Standard test images (official 256×256 release), each paired with one QD-IMD test mask (hole ratio up to 50 %, five coverage bins),
+1,000 Places365-Standard test images (official 256×256 release), each paired with one QD-IMD test mask (hole ratio up to 44.5 %, five coverage bins of 10 %; only 19 pairs above 30 %),
 256×256 inference, one sample per input for stochastic methods, and identical metric implementations
 (PSNR/SSIM/LPIPS/ℓ1 with TorchMetrics 1.9.0 and lpips 0.1.4, FID with pytorch-fid 0.3.0). The full protocol is in Section 12.5 of the paper.
 
 ## Results (Table 8 of the paper)
 
 Full-image metrics on the 1,000 pairs, as returned by each method. **Bold**: best, <u>underline</u>: second best.
-\* corrected in the revision: re-run with the paired benchmark masks (the originally published rows came from runs that did not use them).
+\* corrected in the revision: Pluralistic, VHII and Spa-former re-run with the paired benchmark masks; ZITS and CTSDG re-run with the structure prior computed from the complete image, as in their official pipelines (the originally published rows came from runs that did not do so). FID is given to three decimals.
 
 | Family | Year | Method | PSNR ↑ | SSIM ↑ | FID ↓ | LPIPS ↓ | ℓ1 ↓ |
 |---|---|---|---|---|---|---|---|
-| G1 | 2019 | DeepFillv2 | 31.38 | 0.9492 | 10.33 | 0.0327 | 0.00812 |
-| G1 | 2021 | MADF | 32.71 | 0.9586 | 8.19 | 0.0271 | <u>0.00588</u> |
-| G2 | 2019 | Pluralistic* | 29.49 | 0.9251 | 23.26 | 0.0647 | 0.00982 |
-| G2 | 2019 | PEN-Net | 27.06 | 0.9109 | 26.46 | 0.0796 | 0.01391 |
-| G2 | 2021 | CoModGAN | 29.38 | 0.9330 | 10.94 | 0.0503 | 0.01724 |
-| G2 | 2023 | SCAT | **33.46** | **0.9635** | **6.38** | <u>0.0209</u> | **0.00549** |
-| G2 | 2024 | Latent-code | 31.11 | 0.9462 | 9.59 | 0.0307 | 0.00756 |
-| G3 | 2019 | EdgeConnect | 31.02 | 0.9457 | 10.49 | 0.0317 | 0.00737 |
-| G3 | 2019 | StructureFlow | 31.41 | 0.9536 | 7.62 | 0.0282 | 0.00792 |
-| G3 | 2020 | E2I | 31.67 | 0.9512 | 8.34 | 0.0272 | 0.00683 |
-| G3 | 2020 | MEDFE | 30.31 | 0.9375 | 15.94 | 0.0465 | 0.00934 |
-| G3 | 2021 | CTSDG | 30.24 | 0.9311 | 19.78 | 0.0602 | 0.00859 |
-| G3 | 2022 | DGTS | 28.58 | 0.9005 | 26.51 | 0.0985 | 0.01587 |
-| G3 | 2022 | ZITS | 26.70 | 0.9157 | 31.84 | 0.1010 | 0.01269 |
-| G4 | 2021 | BAT-Fill | 31.24 | 0.9520 | 8.78 | 0.0281 | 0.00796 |
-| G4 | 2021 | WaveFill | 29.79 | 0.9418 | 14.33 | 0.0448 | 0.00903 |
-| G4 | 2022 | LaMa | 32.43 | 0.9565 | 6.77 | 0.0224 | 0.00623 |
-| G4 | 2022 | MISF | <u>32.93</u> | 0.9592 | 7.10 | 0.0227 | 0.00590 |
-| G4 | 2023 | CMT | 32.45 | 0.9569 | 7.45 | 0.0245 | 0.00610 |
-| G4 | 2023 | VHII* | 32.65 | 0.9572 | 6.79 | 0.0236 | 0.00605 |
-| G4 | 2024 | Spa-former* | 31.10 | 0.9562 | 10.01 | 0.0326 | 0.00647 |
-| G4 | 2026 | MADIN | 32.85 | <u>0.9595</u> | <u>6.39</u> | **0.0200** | 0.00596 |
-| G5 | 2022 | RePaint | 31.14 | 0.9491 | 7.49 | 0.0279 | 0.00949 |
-| G5 | 2024 | StrDiff | 28.21 | 0.9336 | 14.50 | 0.0618 | 0.00990 |
+| G1 | 2019 | DeepFillv2 | 31.38 | 0.9492 | 10.334 | 0.0327 | 0.00812 |
+| G1 | 2021 | MADF | 32.71 | 0.9586 | 8.193 | 0.0271 | <u>0.00588</u> |
+| G1 | 2022 | MISF | <u>32.93</u> | 0.9592 | 7.097 | 0.0227 | 0.00590 |
+| G2 | 2019 | Pluralistic* | 29.49 | 0.9251 | 23.260 | 0.0647 | 0.00982 |
+| G2 | 2019 | PEN-Net | 27.06 | 0.9109 | 26.460 | 0.0796 | 0.01391 |
+| G2 | 2021 | CoModGAN | 29.38 | 0.9330 | 10.941 | 0.0503 | 0.01724 |
+| G2 | 2023 | SCAT | **33.46** | **0.9635** | **6.385** | <u>0.0209</u> | **0.00549** |
+| G2 | 2024 | Latent-code | 31.11 | 0.9462 | 9.590 | 0.0307 | 0.00756 |
+| G3 | 2019 | EdgeConnect | 31.02 | 0.9457 | 10.486 | 0.0317 | 0.00737 |
+| G3 | 2019 | StructureFlow | 31.41 | 0.9536 | 7.618 | 0.0282 | 0.00792 |
+| G3 | 2020 | E2I | 31.67 | 0.9512 | 8.338 | 0.0272 | 0.00683 |
+| G3 | 2020 | MEDFE | 30.31 | 0.9375 | 15.937 | 0.0465 | 0.00934 |
+| G3 | 2021 | CTSDG* | 32.13 | 0.9538 | 9.812 | 0.0308 | 0.00646 |
+| G3 | 2022 | DGTS | 28.58 | 0.9005 | 26.508 | 0.0985 | 0.01587 |
+| G3 | 2022 | ZITS* | 32.83 | 0.9582 | 6.457 | 0.0212 | 0.00600 |
+| G4 | 2021 | BAT-Fill | 31.24 | 0.9520 | 8.780 | 0.0281 | 0.00796 |
+| G4 | 2021 | WaveFill | 29.79 | 0.9418 | 14.333 | 0.0448 | 0.00903 |
+| G4 | 2022 | LaMa | 32.43 | 0.9565 | 6.773 | 0.0224 | 0.00623 |
+| G4 | 2023 | CMT | 32.45 | 0.9569 | 7.450 | 0.0245 | 0.00610 |
+| G4 | 2023 | VHII* | 32.65 | 0.9572 | 6.791 | 0.0236 | 0.00605 |
+| G4 | 2024 | Spa-former* | 31.10 | 0.9562 | 10.012 | 0.0326 | 0.00647 |
+| G4 | 2026 | MADIN | 32.85 | <u>0.9595</u> | <u>6.387</u> | **0.0200** | 0.00596 |
+| G5 | 2022 | RePaint | 31.14 | 0.9491 | 7.492 | 0.0279 | 0.00949 |
+| G5 | 2024 | StrDiff | 28.21 | 0.9336 | 14.505 | 0.0618 | 0.00990 |
 
 Confidence intervals, KID, P-/U-IDS, NIQE (Table 9), diversity (Table 10), per-coverage-bin and masked-region scores (Table 11) and efficiency
 (Table 12) are in `scores/tables/`; per-image scores of every method are in `scores/per_image/`.
@@ -65,7 +65,7 @@ Confidence intervals, KID, P-/U-IDS, NIQE (Table 9), diversity (Table 10), per-c
 
 ## Getting the generated outputs
 
-The 24×1,000 benchmark outputs (2.5 GB) and the Table 10 samples (1.5 GB) are archived on Zenodo, one zip per method, at https://doi.org/10.5281/zenodo.24152790 (licence CC BY-NC 4.0; `SHA256SUMS.txt` lists the checksums). They can be downloaded from the record page or with the script, which verifies every archive and unpacks it:
+The 24×1,000 benchmark outputs (2.5 GB) and the Table 10 samples (1.5 GB) are archived on Zenodo, one zip per method, at https://doi.org/10.5281/zenodo.24152789 (licence CC BY-NC 4.0; `SHA256SUMS.txt` lists the checksums). They can be downloaded from the record page or with the script, which verifies every archive and unpacks it:
 
 ```bash
 python download_outputs.py            # all archives -> outputs/<method>/, samples_table10/<method>/
@@ -129,7 +129,7 @@ python code/runners/gan_run.py --method spa-former --list all --seeds 0 --out ou
 The code is released under the MIT license (`LICENSE`). The data are not: the test images come from Places365-Standard
 (Zhou et al., MIT CSAIL; distributed for non-commercial research and educational use under the Places terms of use) and the masks from the
 Quick Draw Irregular Mask Dataset (QD-IMD; derived from the Google Quick, Draw! data). The masks in `data/masks/`, the generated outputs and all
-derived images inherit the licenses and terms of use of Places2 and QD-IMD; check those terms before redistributing them. Accordingly, the archived outputs (https://doi.org/10.5281/zenodo.24152790) are released under CC BY-NC 4.0. The method outputs were
+derived images inherit the licenses and terms of use of Places2 and QD-IMD; check those terms before redistributing them. Accordingly, the archived outputs (https://doi.org/10.5281/zenodo.24152789) are released under CC BY-NC 4.0. The method outputs were
 produced with the authors' released checkpoints, which have their own licenses (see each repository in `configs/`).
 
 ## Citation
@@ -143,7 +143,7 @@ Please cite the paper above. To cite the released artifacts (see also `CITATION.
   version   = {v1.0},
   year      = {2026},
   publisher = {Zenodo},
-  doi       = {10.5281/zenodo.24152118},
+  doi       = {10.5281/zenodo.24152117},
   url       = {https://github.com/Mohamed-Abokhalil/natural-inpainting-benchmark}
 }
 
@@ -153,6 +153,6 @@ Please cite the paper above. To cite the released artifacts (see also `CITATION.
   version   = {v1.0},
   year      = {2026},
   publisher = {Zenodo},
-  doi       = {10.5281/zenodo.24152790}
+  doi       = {10.5281/zenodo.24152789}
 }
 ```

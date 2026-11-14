@@ -10,3 +10,4 @@ inference_resolution: "256"
 benchmark_resolution: 256
 mask_convention_input: 255 = hole (data/masks)
 notes: "Paper: Campana et al., Computers & Graphics 113 (2023) 57-68 (submitted manuscript cited Peng et al. 2021 by mistake). PUBLISHED RUN INVALID: test_dataset.py pairs each image with maskfile[random.randint(...)]; corrected re-run with paired masks; deterministic (no sampling)"
+repo_dependencies: "environments/VHII/repo_declared_environment.yml (as declared by the repository at the pinned commit; the versions actually installed for the original inference run were not recorded)"

@@ -74,18 +74,18 @@ matplotlib.rcParams.update({
 })
 
 # Method folder names under SOTA/, in Table `tab:benchmark` order (by PSNR).
-METHODS = [  # order of corrected Table 8 PSNR (revision)
-    "SCAT", "MISF", "MADIN", "MADF", "VHII", "CMT", "LaMa", "E2I",
+METHODS = [  # order of corrected Table 8 PSNR (revision, after the ZITS/CTSDG re-runs)
+    "SCAT", "MISF", "MADIN", "ZITS", "MADF", "VHII", "CMT", "LaMa", "CTSDG", "E2I",
     "StructureFlow", "DeepFillv2", "BAT-Fill", "RePaint", "Latent-code", "Spa-former",
-    "EdgeConnect", "MEDFE", "CTSDG", "WaveFill", "Pluralistic", "CoModGAN",
-    "DGTS", "StrDiff", "PEN-Net", "ZITS",
+    "EdgeConnect", "MEDFE", "WaveFill", "Pluralistic", "CoModGAN",
+    "DGTS", "StrDiff", "PEN-Net",
 ]
-RERUN = os.path.join(os.environ.get("BENCH_ROOT", r"D:\Face Unmasking\Inpainting_Framwork\comparison\From-Pixel-to-Face-(survey)"), r"revision/results/rerun")
-CORRECTED = {"VHII": "VHII", "Spa-former": "spa-former", "Pluralistic": "Pluralistic"}  # protocol-corrected outputs
+RERUN = "D:/Face Unmasking/Inpainting_Framwork/comparison/From-Pixel-to-Face-(survey)/revision/results/rerun"
+CORRECTED = {"VHII": "VHII", "Spa-former": "spa-former", "Pluralistic": "Pluralistic", "ZITS": "ZITS", "CTSDG": "CTSDG"}  # protocol-corrected outputs
 
 PRETTY = {"gt": "Ground truth", "masked": "Masked input", "mask": "Mask"}
 EXTS = (".png", ".jpg", ".jpeg", ".bmp", ".tif", ".tiff", ".webp")
-OUTDIR = os.path.join(os.environ.get("BENCH_ROOT", r"D:\Face Unmasking\Inpainting_Framwork\comparison\From-Pixel-to-Face-(survey)"), r"revision/results/figures")
+OUTDIR = "D:/Face Unmasking/Inpainting_Framwork/comparison/From-Pixel-to-Face-(survey)/revision/results/figures"
 
 TEXT_W_IN, TEXT_H_IN = 7.09, 9.72   # sn-jnl A4 text area
 LABEL_W_IN = 1.00                   # left gutter for method names

@@ -12,4 +12,5 @@ native_resolution: "256"
 inference_resolution: "256"
 benchmark_resolution: 256
 mask_convention_input: 255 = hole (data/masks)
-notes: "HAWP wireframes precomputed (places2_val_wireframes)"
+notes: "PUBLISHED RUN INVALID: the benchmark run fed the white-filled masked images, so Canny edges and HAWP wireframes traced the hole boundaries. Corrected re-run (code/zits_rerun/setup_run.py): FTR_inference.py receives the complete test images (it masks them itself) and wireframes extracted by the official lsm_hawp_inference.py from the complete images; config identical to ckpt/zits_places2/config.yml"
+repo_dependencies: "environments/ZITS/repo_declared_requirement.txt (as declared by the repository at the pinned commit; the versions actually installed for the original inference run were not recorded)"

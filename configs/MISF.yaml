@@ -1,5 +1,5 @@
 method: MISF
-family: G4
+family: G1
 repository: https://github.com/tsingqguo/misf.git
 commit: 775ef7d576a43407f9b447dcb80ba10f5c8c6148
 checkpoints:
@@ -10,3 +10,4 @@ inference_resolution: "256"
 benchmark_resolution: 256
 mask_convention_input: 255 = hole (data/masks)
 notes: "composited"
+repo_dependencies: "environments/MISF/repo_declared_requirements.txt (as declared by the repository at the pinned commit; the versions actually installed for the original inference run were not recorded)"

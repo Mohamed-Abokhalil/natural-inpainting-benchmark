@@ -20,5 +20,7 @@ for k, h in hi.items():
         if abs(s[m] - s.iloc[0]) <= 0.01 * abs(s.iloc[0]): test(k, best, m, "within 1% of best")
 for a, b, k in [("SCAT", "MADIN", "fid"), ("MADF", "VHII", "l1"), ("MADF", "MADIN", "l1"), ("VHII", "MADIN", "l1")]:
     test(k, a, b, "claim in submitted text")
+for a, b, k in [("SCAT", "ZITS", "fid"), ("MADIN", "ZITS", "fid"), ("MADIN", "ZITS", "psnr"), ("SCAT", "ZITS", "lpips"), ("MADIN", "ZITS", "lpips")]:
+    test(k, a, b, "re-run ZITS near the top (round 6)")
 df = pd.DataFrame(rows); df.to_csv(os.path.join(RES, "ties_final.csv"), index=False)
 pd.set_option("display.width", 200); print(df.round(6).to_string())

@@ -7,8 +7,8 @@ from matplotlib.patches import Rectangle
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from fig_crops import DATA, OUT, CROP, img, mask, best_window, outline, crop3, masked_input
 RES = os.path.join(os.path.dirname(OUT), "rerun")
-src = lambda m: os.path.join(RES, m) if m in ("VHII", "spa-former", "Pluralistic") else os.path.join(DATA, "SOTA", m)
-cases = [("(a) G3 ZITS:\nspurious edges", "148784.png", "ZITS", "hole"),
+src = lambda m: os.path.join(RES, m) if m in ("VHII", "spa-former", "Pluralistic", "ZITS", "CTSDG") else os.path.join(DATA, "SOTA", m)
+cases = [("(a) G3 DGTS:\nspurious edges", "269126.png", "DGTS", "hole"),
          ("(b) G2 PEN-Net:\npatch-borrowing artefacts", "206874.png", "PEN-Net", "hole"),
          ("(c) G1 MADF, 40-50%:\nover-smoothing", "18142.png", "MADF", "hole"),
          ("(d) G5 StrDiff:\ninserted texture", "18142.png", "StrDiff", "err")]

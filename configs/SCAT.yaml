@@ -10,3 +10,4 @@ inference_resolution: "256"
 benchmark_resolution: 256
 mask_convention_input: 255 = hole (data/masks)
 notes: "composited"
+repo_dependencies: "environments/SCAT/repo_declared_environment.yml (as declared by the repository at the pinned commit; the versions actually installed for the original inference run were not recorded)"

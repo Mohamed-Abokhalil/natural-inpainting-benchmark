@@ -2,11 +2,11 @@ cff-version: 1.2.0
 message: "If you use this benchmark, please cite the paper below."
 title: "Unified Places2 inpainting benchmark (code, configurations and per-image scores)"
 type: software
-version: "v1.0"
+version: "v1.1"
 license: MIT
 repository-code: "https://github.com/Mohamed-Abokhalil/natural-inpainting-benchmark"
 url: "https://github.com/Mohamed-Abokhalil/natural-inpainting-benchmark"
-doi: "10.5281/zenodo.24152118"
+doi: "10.5281/zenodo.24152117"
 abstract: >-
   Code, configurations, test-set definition (Places365-Standard image list, QD-IMD masks, image-mask pairings, seeds)
   and per-image scores of the unified benchmark of 24 natural-image inpainting methods in "From Convolutions to

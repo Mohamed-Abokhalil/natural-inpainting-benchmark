@@ -12,3 +12,4 @@ inference_resolution: "256"
 benchmark_resolution: 256
 mask_convention_input: 255 = hole (data/masks)
 notes: "IR-SDE reverse-time SDE, T=400, cosine schedule, max_sigma 30, adaptive resampling (u_max 6, u_min 3, jump 5, re 5)"
+repo_dependencies: "environments/StrDiff/repo_declared_requirements.txt (as declared by the repository at the pinned commit; the versions actually installed for the original inference run were not recorded)"

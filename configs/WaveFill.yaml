@@ -10,3 +10,4 @@ inference_resolution: "256"
 benchmark_resolution: 256
 mask_convention_input: 255 = hole (data/masks)
 notes: "options of test_wavelet.sh (WaveletInpaintLv2GCFRAN, level 2, attention)"
+repo_dependencies: "environments/WaveFill/repo_declared_requirements.txt (as declared by the repository at the pinned commit; the versions actually installed for the original inference run were not recorded)"

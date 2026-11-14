@@ -8,10 +8,10 @@ for visual confirmation. Criteria (all on coverage >= 20% unless stated):
 import os, json
 import numpy as np, pandas as pd
 from PIL import Image
-R = os.environ.get("BENCH_ROOT", r"D:\Face Unmasking\Inpainting_Framwork\comparison\From-Pixel-to-Face-(survey)")
+R = r"D:\Face Unmasking\Inpainting_Framwork\comparison\From-Pixel-to-Face-(survey)"
 DATA = os.path.join(R, "data", "places2"); RES = os.path.join(R, "revision", "results")
 pi = {f[:-4]: pd.read_csv(os.path.join(RES, "per_image", "final", f)) for f in os.listdir(os.path.join(RES, "per_image", "final"))}
-src = lambda m: os.path.join(RES, "rerun", m) if m in ("VHII", "spa-former", "Pluralistic") else os.path.join(DATA, "SOTA", m)
+src = lambda m: os.path.join(RES, "rerun", m) if m in ("VHII", "spa-former", "Pluralistic", "ZITS", "CTSDG") else os.path.join(DATA, "SOTA", m)
 files = pi["SCAT"].file.tolist(); bins = pi["SCAT"].bin.tolist()
 P = pd.DataFrame({m: d.psnr_hole for m, d in pi.items()}); L = pd.DataFrame({m: d.lpips_hole_bbox for m, d in pi.items()})
 big = np.array([b in ("20_30", "30_40", "40_50") for b in bins])
