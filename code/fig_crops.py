@@ -58,7 +58,7 @@ def main():
     for r, (bl, f) in enumerate(scenes):
         mi, m = masked_input(f); pos = best_window(m)
         tiles = [mi, crop3(img(os.path.join(DATA, "gt"), f), m, pos)]
-        tiles += [crop3(img(os.path.join(os.path.dirname(OUT), "rerun", d) if d in ("ZITS", "CTSDG", "VHII", "spa-former", "Pluralistic") else os.path.join(DATA, "SOTA", d), f), m, pos) for _, d, _ in methods]
+        tiles += [crop3(img(os.path.join(os.path.dirname(OUT), "rerun", d) if d in ("ZITS", "CTSDG", "DGTS", "VHII", "spa-former", "Pluralistic") else os.path.join(DATA, "SOTA", d), f), m, pos) for _, d, _ in methods]
         for c, t in enumerate(tiles):
             ax = axes[r][c]; ax.imshow(t, interpolation="nearest"); ax.set_xticks([]); ax.set_yticks([])
             for s in ax.spines.values(): s.set_visible(False)

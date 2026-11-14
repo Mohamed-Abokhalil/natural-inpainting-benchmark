@@ -74,14 +74,14 @@ matplotlib.rcParams.update({
 })
 
 # Method folder names under SOTA/, in Table `tab:benchmark` order (by PSNR).
-METHODS = [  # order of corrected Table 8 PSNR (revision, after the ZITS/CTSDG re-runs)
+METHODS = [  # order of corrected Table 8 PSNR (revision, after the ZITS/CTSDG/DGTS re-runs)
     "SCAT", "MISF", "MADIN", "ZITS", "MADF", "VHII", "CMT", "LaMa", "CTSDG", "E2I",
-    "StructureFlow", "DeepFillv2", "BAT-Fill", "RePaint", "Latent-code", "Spa-former",
+    "StructureFlow", "DeepFillv2", "BAT-Fill", "RePaint", "DGTS", "Latent-code", "Spa-former",
     "EdgeConnect", "MEDFE", "WaveFill", "Pluralistic", "CoModGAN",
-    "DGTS", "StrDiff", "PEN-Net",
+    "StrDiff", "PEN-Net",
 ]
 RERUN = "D:/Face Unmasking/Inpainting_Framwork/comparison/From-Pixel-to-Face-(survey)/revision/results/rerun"
-CORRECTED = {"VHII": "VHII", "Spa-former": "spa-former", "Pluralistic": "Pluralistic", "ZITS": "ZITS", "CTSDG": "CTSDG"}  # protocol-corrected outputs
+CORRECTED = {"VHII": "VHII", "Spa-former": "spa-former", "Pluralistic": "Pluralistic", "ZITS": "ZITS", "CTSDG": "CTSDG", "DGTS": "DGTS"}  # protocol-corrected outputs
 
 PRETTY = {"gt": "Ground truth", "masked": "Masked input", "mask": "Mask"}
 EXTS = (".png", ".jpg", ".jpeg", ".bmp", ".tif", ".tiff", ".webp")

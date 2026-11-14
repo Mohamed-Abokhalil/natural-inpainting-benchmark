@@ -14,7 +14,7 @@ Twenty-four inpainting methods (2019–2026) are evaluated with their authors' r
 ## Results (Table 8 of the paper)
 
 Full-image metrics on the 1,000 pairs, as returned by each method. **Bold**: best, <u>underline</u>: second best.
-\* corrected in the revision: Pluralistic, VHII and Spa-former re-run with the paired benchmark masks; ZITS and CTSDG re-run with the structure prior computed from the complete image, as in their official pipelines (the originally published rows came from runs that did not do so). FID is given to three decimals.
+\* corrected in the revision: Pluralistic, VHII and Spa-former re-run with the paired benchmark masks; ZITS, CTSDG and DGTS re-run with the complete test images as input, as in their official pipelines (their original runs had read the white-filled masked images); the originally published rows came from the faulty runs. FID is given to three decimals.
 
 | Family | Year | Method | PSNR ↑ | SSIM ↑ | FID ↓ | LPIPS ↓ | ℓ1 ↓ |
 |---|---|---|---|---|---|---|---|
@@ -31,7 +31,7 @@ Full-image metrics on the 1,000 pairs, as returned by each method. **Bold**: bes
 | G3 | 2020 | E2I | 31.67 | 0.9512 | 8.338 | 0.0272 | 0.00683 |
 | G3 | 2020 | MEDFE | 30.31 | 0.9375 | 15.937 | 0.0465 | 0.00934 |
 | G3 | 2021 | CTSDG* | 32.13 | 0.9538 | 9.812 | 0.0308 | 0.00646 |
-| G3 | 2022 | DGTS | 28.58 | 0.9005 | 26.508 | 0.0985 | 0.01587 |
+| G3 | 2022 | DGTS* | 31.13 | 0.9513 | 8.195 | 0.0266 | 0.01210 |
 | G3 | 2022 | ZITS* | 32.83 | 0.9582 | 6.457 | 0.0212 | 0.00600 |
 | G4 | 2021 | BAT-Fill | 31.24 | 0.9520 | 8.780 | 0.0281 | 0.00796 |
 | G4 | 2021 | WaveFill | 29.79 | 0.9418 | 14.333 | 0.0448 | 0.00903 |
@@ -140,7 +140,7 @@ Please cite the paper above. To cite the released artifacts (see also `CITATION.
 @software{mahmoud2026benchmark_code,
   author    = {Mahmoud, Mohamed and Senussi, Mostafa Farouk and Abdalla, Mahmoud and Kasem, Mahmoud SalahEldin and Kang, Hyun-Soo},
   title     = {Unified Places2 inpainting benchmark (code, configurations and per-image scores)},
-  version   = {v1.0},
+  version   = {v1.1},
   year      = {2026},
   publisher = {Zenodo},
   doi       = {10.5281/zenodo.24152117},
@@ -150,7 +150,7 @@ Please cite the paper above. To cite the released artifacts (see also `CITATION.
 @dataset{mahmoud2026benchmark_outputs,
   author    = {Mahmoud, Mohamed and Senussi, Mostafa Farouk and Abdalla, Mahmoud and Kasem, Mahmoud SalahEldin and Kang, Hyun-Soo},
   title     = {Generated outputs of the unified Places2 inpainting benchmark (NEUCOM-D-26-17181)},
-  version   = {v1.0},
+  version   = {v1.1},
   year      = {2026},
   publisher = {Zenodo},
   doi       = {10.5281/zenodo.24152789}

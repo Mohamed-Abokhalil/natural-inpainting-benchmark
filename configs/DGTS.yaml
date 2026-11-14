@@ -10,4 +10,4 @@ native_resolution: "256 (coarse 64x64 + upsampler)"
 inference_resolution: "256"
 benchmark_resolution: 256
 mask_convention_input: 255 = hole (data/masks)
-notes: "intermediate JPEG round-trips in official test code; output not composited (mean |known-pixel diff| 1.87 grey levels)"
+notes: "PUBLISHED RUN INVALID: the benchmark run pointed --dataset_dir at the white-filled masked images, which then passed through the JPEG round trip and min/max normalisation of the official test code before re-compositing. Corrected re-run (code/dgts_rerun/setup_run.py): main.py --dataset_dir <complete test images>; the network and upsampler mask the input themselves. Output not exactly composited (official JPEG round trip of the known pixels)"

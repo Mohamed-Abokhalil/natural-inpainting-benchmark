@@ -11,4 +11,4 @@ native_resolution: "256"
 inference_resolution: "256"
 benchmark_resolution: 256
 mask_convention_input: 255 = hole (data/masks)
-notes: "structure image (RTV smoothing) input"
+notes: "the --st_root (structure image) input is used by the model only as a training-loss target (set_input), not in the forward pass; the network fills the holes of the complete input image itself, so the test outputs do not depend on it (checked in the code)"

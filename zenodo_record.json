@@ -1,6 +1,6 @@
 {
- "record_id": "24152790",
- "doi": "10.5281/zenodo.24152790",
+ "record_id": "24215431",
+ "doi": "10.5281/zenodo.24215431",
  "note": "Zenodo record holding the generated outputs (archives below); read by download_outputs.py.",
  "archives": [
   {
@@ -21,8 +21,8 @@
    "file": "outputs_CTSDG.zip",
    "extracts_to": "outputs/CTSDG/",
    "n_files": 1000,
-   "bytes": 105269178,
-   "sha256": "53809a85d8bc9f2c466d96361c3ea2436dad3bcd3033967864d289d82a8e2e21"
+   "bytes": 103378842,
+   "sha256": "ac4413696681b21909b4715c50214a44c326b924b06ec975935d3d71c9e303db"
   },
   {
    "file": "outputs_CoModGAN.zip",
@@ -35,8 +35,8 @@
    "file": "outputs_DGTS.zip",
    "extracts_to": "outputs/DGTS/",
    "n_files": 1000,
-   "bytes": 111993891,
-   "sha256": "de0d8ee9f351862ea2ef89ef6566705f4631a8ad20bc6b9f38062f7904e83f18"
+   "bytes": 104273736,
+   "sha256": "fb5d2550733d64162175312e8313246a935d041537a64f4430a7db5fc0271163"
   },
   {
    "file": "outputs_DeepFillv2.zip",
@@ -154,8 +154,8 @@
    "file": "outputs_ZITS.zip",
    "extracts_to": "outputs/ZITS/",
    "n_files": 1000,
-   "bytes": 126367938,
-   "sha256": "48a9675f8f2bf365e63603a23011fcfa297606ce021bf8fc6ed3969844884041"
+   "bytes": 123309108,
+   "sha256": "ac2acb96dc9152288b79adcf3e50ad8cc0e0ae6892929bbe1b8eddca00fc555d"
   },
   {
    "file": "outputs_latent-code.zip",
@@ -215,5 +215,6 @@
   }
  ],
  "software_doi": "10.5281/zenodo.24152118",
- "license": "CC-BY-NC-4.0"
+ "license": "CC-BY-NC-4.0",
+ "concept_doi": "10.5281/zenodo.24152789"
 }

@@ -12,3 +12,4 @@ benchmark_resolution: 256
 mask_convention_input: 255 = hole (data/masks)
 notes: "Canny edges (sigma 2) computed on CPU"
 repo_dependencies: "environments/EdgeConnect/repo_declared_requirements.txt (as declared by the repository at the pinned commit; the versions actually installed for the original inference run were not recorded)"
+input_check: "round 6: re-run on sample images with complete and with white-filled masked input gives the same output (the pipeline masks the input before computing its prior); hole content does not affect the result"

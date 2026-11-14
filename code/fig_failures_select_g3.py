@@ -6,7 +6,7 @@ import numpy as np, pandas as pd
 from PIL import Image
 R = r"D:\Face Unmasking\Inpainting_Framwork\comparison\From-Pixel-to-Face-(survey)"
 DATA = os.path.join(R, "data", "places2"); RES = os.path.join(R, "revision", "results")
-RERUN = ("VHII", "spa-former", "Pluralistic", "ZITS", "CTSDG")
+RERUN = ("VHII", "spa-former", "Pluralistic", "ZITS", "CTSDG", "DGTS")
 src = lambda m: os.path.join(RES, "rerun", m) if m in RERUN else os.path.join(DATA, "SOTA", m)
 pi = {f[:-4]: pd.read_csv(os.path.join(RES, "per_image", "final", f)) for f in os.listdir(os.path.join(RES, "per_image", "final"))}
 files = pi["SCAT"].file.tolist(); bins = pi["SCAT"].bin.tolist()

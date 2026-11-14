@@ -2,15 +2,18 @@
  "psnr": {
   "max_rank_change": 6,
   "changed": [
+   "DeepFillv2",
    "Pluralistic",
    "CoModGAN",
    "latent-code",
    "EdgeConnect",
+   "StructureFlow",
+   "E2I",
    "MEDFE",
+   "DGTS",
    "BAT-Fill",
    "WaveFill",
-   "spa-former",
-   "RePaint"
+   "spa-former"
   ],
   "top2_final": [
    "SCAT",
@@ -25,7 +28,6 @@
   "max_rank_change": 5,
   "changed": [
    "DeepFillv2",
-   "PEN-Net",
    "CoModGAN",
    "latent-code",
    "EdgeConnect",
@@ -34,6 +36,7 @@
    "MEDFE",
    "CTSDG",
    "DGTS",
+   "BAT-Fill",
    "WaveFill",
    "RePaint",
    "StrDiff"
@@ -48,15 +51,16 @@
   ]
  },
  "fid": {
-  "max_rank_change": 5,
+  "max_rank_change": 6,
   "changed": [
    "DeepFillv2",
-   "PEN-Net",
    "CoModGAN",
    "latent-code",
    "EdgeConnect",
+   "E2I",
    "CTSDG",
    "DGTS",
+   "BAT-Fill",
    "CMT",
    "spa-former",
    "RePaint"
@@ -74,15 +78,19 @@
   "max_rank_change": 7,
   "changed": [
    "DeepFillv2",
-   "PEN-Net",
+   "MADF",
    "CoModGAN",
    "latent-code",
    "EdgeConnect",
+   "StructureFlow",
+   "E2I",
    "MEDFE",
    "CTSDG",
    "DGTS",
+   "BAT-Fill",
    "WaveFill",
-   "spa-former"
+   "spa-former",
+   "RePaint"
   ],
   "top2_final": [
    "MADIN",
@@ -94,15 +102,15 @@
   ]
  },
  "l1": {
-  "max_rank_change": 8,
+  "max_rank_change": 11,
   "changed": [
-   "DeepFillv2",
    "Pluralistic",
    "PEN-Net",
    "CoModGAN",
    "latent-code",
    "EdgeConnect",
    "StructureFlow",
+   "E2I",
    "MEDFE",
    "DGTS",
    "BAT-Fill",

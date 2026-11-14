@@ -192,7 +192,7 @@
   ]
  },
  "new": {
-  "kid_fid_rho": 0.9669565217391304,
+  "kid_fid_rho": 0.9634782608695651,
   "kid_top4": [
    "RePaint",
    "SCAT",
@@ -207,8 +207,8 @@
    0.019
   ],
   "repaint_fid_rank": 8,
-  "pids_rho": -0.9415656608648207,
-  "uids_rho": -0.9501007901202712,
+  "pids_rho": -0.9372836523515575,
+  "uids_rho": -0.9458112237076443,
   "pids_top2": [
    "ZITS",
    "MADIN"
@@ -219,22 +219,22 @@
   ],
   "pids_max_pct": 5.2,
   "uids_max_pct": 6.29999999999999,
-  "niqe_rho": -0.29565217391304344,
+  "niqe_rho": -0.47130434782608693,
   "niqe_top2": [
    "MEDFE",
    "Pluralistic"
   ],
   "niqe_top2_fidrank": [
-   21,
-   22
+   22,
+   23
   ],
   "sp_psnr": [
-   0.7739130434782608,
-   0.5826086956521739
+   0.7826086956521738,
+   0.6
   ],
   "sp_lpips": [
-   0.76,
-   0.6452173913043477
+   0.7382608695652173,
+   0.6234782608695651
   ],
   "top5_every_bin": [
    "SCAT",
@@ -255,7 +255,7 @@
    1
   ],
   "rank_lpips_spa-former": [
-   22,
+   23,
    1,
    1,
    1,
@@ -263,31 +263,31 @@
   ],
   "rank_psnr_WaveFill": [
    23,
-   15,
+   16,
    10,
    9,
    6
   ],
   "rank_lpips_WaveFill": [
-   23,
-   17,
+   24,
+   18,
    8,
    8,
-   11
+   12
   ],
   "rank_psnr_RePaint": [
-   12,
-   16,
-   19,
-   19,
+   13,
+   17,
+   20,
+   20,
    22
   ],
   "rank_lpips_RePaint": [
-   10,
    11,
-   13,
-   13,
-   18
+   12,
+   14,
+   14,
+   19
   ],
   "rank_psnr_StrDiff": [
    22,
@@ -297,11 +297,11 @@
    23
   ],
   "rank_lpips_StrDiff": [
-   18,
+   19,
+   22,
+   22,
    21,
-   21,
-   20,
-   20
+   21
   ],
   "rank_psnr_ZITS": [
    4,
@@ -325,11 +325,11 @@
    10
   ],
   "rank_lpips_CTSDG": [
-   12,
-   15,
-   17,
+   13,
+   16,
    18,
-   19
+   19,
+   20
   ],
   "bin0_span": [
    17.948376057364722,
@@ -351,8 +351,8 @@
    "spa-former",
    "spa-former"
   ],
-  "lat_psnr_rho": -0.2539130434782608,
-  "lat_fid_rho": 0.1034782608695652,
+  "lat_psnr_rho": -0.20434782608695648,
+  "lat_fid_rho": 0.023478260869565212,
   "lat_ratio": 24701.296453669554,
   "fastest": "SCAT",
   "fid_best": "SCAT",
@@ -371,6 +371,7 @@
    "DeepFillv2",
    "BAT-Fill",
    "RePaint",
+   "DGTS",
    "latent-code",
    "spa-former",
    "EdgeConnect",
@@ -378,7 +379,6 @@
    "WaveFill",
    "Pluralistic",
    "CoModGAN",
-   "DGTS",
    "StrDiff",
    "PEN-Net"
   ]

@@ -10,7 +10,7 @@ FAMILY = {"G1": ["DeepFillv2", "MADF", "MISF"], "G2": ["Pluralistic", "PEN-Net",
           "G3": ["EdgeConnect", "StructureFlow", "E2I", "MEDFE", "CTSDG", "DGTS", "ZITS"],
           "G4": ["BAT-Fill", "WaveFill", "LaMa", "CMT", "VHII", "spa-former", "MADIN"], "G5": ["RePaint", "StrDiff"]}
 NAME = {"latent-code": "Latent-code", "spa-former": "Spa-former"}
-CHANGED = {"ZITS", "CTSDG"}
+CHANGED = {"ZITS", "CTSDG", "DGTS"}
 PREV8 = {"Pluralistic", "VHII", "spa-former", "MISF"}  # Table 8 rows marked in earlier rounds, plus the moved MISF row
 BINS = ["0_10", "10_20", "20_30", "30_40", "40_50"]
 s = open(TEX, encoding="utf-8").read()

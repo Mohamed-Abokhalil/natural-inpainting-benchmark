@@ -11,3 +11,4 @@ inference_resolution: "256"
 benchmark_resolution: 256
 mask_convention_input: 255 = hole (data/masks)
 notes: "TensorFlow 1.x; HED edge detector"
+input_check: "round 6, code check: pipeline_master_tcsvt.py sets every hole pixel to 255 before the coarse network and HED, so hole content does not affect the result"
